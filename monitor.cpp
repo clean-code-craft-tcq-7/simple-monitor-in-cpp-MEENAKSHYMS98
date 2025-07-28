@@ -8,7 +8,7 @@ using std::cout, std::flush, std::this_thread::sleep_for, std::chrono::seconds;
 int vitalsOk(float temperature, float pulseRate, float spo2) {
 return vit_Temp(temperature)&&vit_PulseRate(pulseRate)&&vit_Spo2(spo2);
 }
- 
+
 int vit_Temp(float temperature) {
   if (temperature > 102 || temperature < 95) {
     cout << "Temperature is critical!\n";
